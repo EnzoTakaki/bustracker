@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#map {
+  height: 60vh;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bus-marker {
+  width: 24px;
+  height: 24px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+.bus-marker::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.route-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
