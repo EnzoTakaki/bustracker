@@ -1,7 +1,7 @@
 // Initialize the map
 function initMap() {
   // Default coordinates (can be changed to your city's coordinates)
-  const cityCenter = { lat: -22.2109, lng: -49.9575 }; // New York City
+  const cityCenter = { lat: -22.2109, lng: -49.9575 };
 
   // Create the map
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -20,14 +20,14 @@ function initMap() {
   });
 
   // Sample bus route coordinates
-  const routeCoordinates = [
-    { lat: 40.7128, lng: -74.026 }, // Start point
-    { lat: 40.715, lng: -74.02 },
-    { lat: 40.717, lng: -74.015 },
-    { lat: 40.719, lng: -74.01 },
-    { lat: 40.721, lng: -74.005 },
-    { lat: 40.723, lng: -74.0 }, // End point
-  ];
+  //const routeCoordinates = [
+  //  { lat: 40.7128, lng: -74.026 }, // Start point
+  //  { lat: 40.715, lng: -74.02 },
+  //  { lat: 40.717, lng: -74.015 },
+  //  { lat: 40.719, lng: -74.01 },
+  //  { lat: 40.721, lng: -74.005 },
+  //  { lat: 40.723, lng: -74.0 }, // End point
+  //];
 
   // Draw the route on the map
   const routePath = new google.maps.Polyline({
