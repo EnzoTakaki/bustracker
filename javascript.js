@@ -1,7 +1,7 @@
 // Initialize the map
 function initMap() {
   // Default coordinates (can be changed to your city's coordinates)
-  const cityCenter = { lat: 40.7128, lng: -74.006 }; // New York City
+  const cityCenter = { lat: -22.2109, lng: -49.9575 }; // New York City
 
   // Create the map
   const map = new google.maps.Map(document.getElementById("map"), {
